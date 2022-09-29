@@ -5,34 +5,164 @@
 }
 
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     height: 100vh;
 }
 
-.container{
+.container {
     height: 100vh;
     display: flex;
     flex-direction: column;
 
 }
 
-nav{
-    flex-basis: 5vh;
-    
+nav {
+    flex-basis: 3vh;
     flex-shrink: 0;
-    background-color:red;
+    background-color: red;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 5vh;
+
 }
 
-.users{
-    flex-grow: 2;
+nav .SpeakerView {
+    display: flex;
+    align-items: center;
+    color: black;
+    height: 100%;
     
-    background-color:blue;
+    column-gap: 10px;
+}
+
+.SpeakerView bottom{
+    border-radius: 5px;
+    background-color: grey;
+    padding: 5px 10px;
+    font-size: 0.6rem;
+}
+
+.container-users {
+
+    flex-grow: 2;
+    background-color: blue;
+    padding: 0 5vw;
+
 
 }
 
-footer{
+.users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 10px;
+    max-width: 1200px;
+    height: 100vh;
+    background-color: aquamarine;
+
+}
+
+.user {
+    flex-basis: calc(100% / 7 - 10px);
+    
+
+
+}
+
+.user img {
+    width: 100%;
+    
+    position: relative;
+    
+    
+    
+    
+
+
+
+
+}
+
+.text-img{
+    position: absolute;
+    display: inline;
+    left:0;
+    bottom: 0;
+    color: white ;
+    background-color: black;
+    font-size: 0.6rem;
+    padding: 10px 10px;
+
+}
+
+footer {
     flex-basis: 8vh;
     flex-shrink: 0;
-    background-color:yellow;
+    background-color: yellow;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between
 }
+
+.text {
+    font-size: 1rem;
+
+}
+
+.audiovideo {
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 100%;
+    background-color: purple;
+    justify-content: space-evenly;
+    flex-basis: 15%;
+    padding-top: 5px;
+    
+}
+
+.bottom-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 100%;
+    font-size: 1.2rem;
+    padding-top: 10px;
+
+
+}
+
+.bootom-footer i {
+    margin-bottom: 10px;
+
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 100%;
+    background-color: orange;
+    justify-content: center;
+    column-gap: 20px;
+    padding-top: 5px;
+
+
+    flex-grow: 2;
+}
+
+.end {
+    text-align: center;
+    padding-top: 25px;
+    background-color: grey;
+    color: red;
+    flex-basis: 10%;
+    font-size: 0.7rem;
+    
+    
+}
+
+
+
