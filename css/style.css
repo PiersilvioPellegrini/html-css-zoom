@@ -53,11 +53,12 @@ nav .SpeakerView {
 }
 
 .users {
+    padding: 1rem;
+    /* max-width: 920  /* margin: 0 auto; */
+    margin: 20px 5vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    column-gap: 10px;
-    max-width: 1200px;
+    height: calc(100% -40px);
 
     background-color: aquamarine;
 
@@ -65,15 +66,17 @@ nav .SpeakerView {
 }
 
 .user {
-    flex-basis: calc(100% / 7);
-    border: 1px solid yellow;
+    border: 4px solid transparent;
     position: relative;
+    height: calc(100% / 5);
+    flex-basis: calc(100% / 7);
 
 
 }
 
 .user img {
     width: 100%;
+    height: 100%;
     display: block;
     object-fit: cover;
 
@@ -83,12 +86,12 @@ nav .SpeakerView {
 }
 
 .text-img {
-    position: absolute left:0;
+    padding: .5rem;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
     bottom: 0;
-    color: yellow;
-    background-color: black;
-    font-size: 0.6rem;
-    padding: 10px 10px;
+    left: 0;
+    font-size: .7rem;
 
 
 }
