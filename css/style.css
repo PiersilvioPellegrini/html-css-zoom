@@ -32,11 +32,11 @@ nav .SpeakerView {
     align-items: center;
     color: black;
     height: 100%;
-    
+
     column-gap: 10px;
 }
 
-.SpeakerView bottom{
+.SpeakerView bottom {
     border-radius: 5px;
     background-color: grey;
     padding: 5px 10px;
@@ -46,7 +46,7 @@ nav .SpeakerView {
 .container-users {
 
     flex-grow: 2;
-    background-color: blue;
+
     padding: 0 5vw;
 
 
@@ -58,41 +58,38 @@ nav .SpeakerView {
     justify-content: space-between;
     column-gap: 10px;
     max-width: 1200px;
-    height: 100vh;
+
     background-color: aquamarine;
+
 
 }
 
 .user {
-    flex-basis: calc(100% / 7 - 10px);
-    
+    flex-basis: calc(100% / 7);
+    border: 1px solid yellow;
+    position: relative;
 
 
 }
 
 .user img {
     width: 100%;
-    
-    position: relative;
-    
-    
-    
-    
+    display: block;
+    object-fit: cover;
 
 
 
 
 }
 
-.text-img{
-    position: absolute;
-    display: inline;
-    left:0;
+.text-img {
+    position: absolute left:0;
     bottom: 0;
-    color: white ;
+    color: yellow;
     background-color: black;
     font-size: 0.6rem;
     padding: 10px 10px;
+
 
 }
 
@@ -119,7 +116,7 @@ footer {
     justify-content: space-evenly;
     flex-basis: 15%;
     padding-top: 5px;
-    
+
 }
 
 .bottom-footer {
@@ -160,9 +157,6 @@ footer {
     color: red;
     flex-basis: 10%;
     font-size: 0.7rem;
-    
-    
+
+
 }
-
-
-
